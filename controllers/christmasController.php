@@ -34,6 +34,7 @@ class ChristmasController
     ];
 
     $this->giftsModel->insert($form);
+    $_SESSION["users_id"] = $users["id"];
   }
 
   function login($username)
